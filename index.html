@@ -33,5 +33,19 @@
             </div>
         </section>
     </main>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e){
+            e.preventDefault();
+
+            const email = document.getElementById("imail").value.trim();
+            const senha = document.getElementById("isen").value;
+            
+            if(email === "hugoccaixeta3@gmail.com") {
+                window.location.href = "https://www.cursoemvideo.com/meus-cursos/";
+            } else{
+                alert("login mal sucedido");
+            }  
+        })
+    </script>
 </body>
 </html>
