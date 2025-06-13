@@ -46,19 +46,19 @@ section#login{
 }
 
 section#login > div#imagem {
-    background: var(--lilas) url(../imagens/pexels-jeffery-poon-31301163-7073765.jpg) no-repeat;
+    background: var(--lilas) url(../imagens/aaaaaaaaaaaaaaaaaaa.jpg) no-repeat;
     display: block;
     background-size: cover;
-    background-position: center top;
+    background-position: left center;
     height: 200px;
 }
 
 section#login > div#formulario > h1 {
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-section#login > div#formulario > p {
+div#formulario {
     font-size: 0.8em;
     padding: 8px;
     display: block;
@@ -70,23 +70,29 @@ section#login > div#formulario > p {
 }
 
 form > div.campo{
-    background-color: var(--lilas);
-    border: 2px solid var(--lilas);
+    border: 2px solid var(--verde);
     display: block;
-    width: 90%;
+    width: 100%;
     height: 40px;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
 }
 
 div.campo > input{
-    background-color: #94cfcd;
     font-size: 1em;
     border: 0px;
-    border-radius: 8px;
     padding: 4px;
+    padding-left: 35px;
     height: 95%;
-    width: calc(100% - 30px);
+    width: 100%;
+}
+
+.campo label {
+    position: absolute;
+    top: 4px;
+    left: 4px;
 }
 
 form > input[type=submit] {
@@ -94,7 +100,7 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: var(--verde);
     text-align: center;
     cursor: pointer;
@@ -102,7 +108,35 @@ form > input[type=submit] {
     border-radius: 5px;
 }
 
+form > input[type=submit]:hover{
+    background-color: #2a5e5c;
+}
+
+/* 
 .material-symbols-outlined{
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline-block;
+    font-size: 2em;
+    
+}
+*/
+
+.botao{
+    text-decoration: none;
+    color: #2a5e5c;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+.botao:hover{
+    background-color: aqua;
 }
